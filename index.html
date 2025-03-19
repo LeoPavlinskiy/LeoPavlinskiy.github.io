@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Name Here - Research Scientist specializing in Natural Language Processing, Topic Modeling, Recommender Systems, and Reinforcement Learning">
+  <meta name="keywords" content="Your Name Here, Research Scientist, NLP, Topic Modeling, Machine Learning">
+  <meta name="author" content="Your Name Here">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/">
+  <meta property="og:title" content="Your Name Here - Research Scientist">
+  <meta property="og:description" content="Research Scientist specializing in Natural Language Processing, Topic Modeling, Recommender Systems, and Reinforcement Learning">
+  <meta property="og:image" content="./assets/images/avatar.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourusername.github.io/">
+  <meta property="twitter:title" content="Your Name Here - Research Scientist">
+  <meta property="twitter:description" content="Research Scientist specializing in Natural Language Processing, Topic Modeling, Recommender Systems, and Reinforcement Learning">
+  <meta property="twitter:image" content="./assets/images/avatar.png">
+  
+  <title>Your Name Here</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./assets/images/avatar.png" as="image">
+  <link rel="preload" href="./assets/css/apple-style.css" as="style">
+  <link rel="preload" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" as="script">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/logo.ico" type="image/x-icon">
+  
+  <!-- Google Fonts - Optimized loading -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  </noscript>
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./assets/css/apple-style.css">
+
+  <style>
+    :root {
+      /* Spacing */
+      --spacing-xs: 4px;
+      --spacing-sm: 8px;
+      --spacing-md: 12px;
+      --spacing-lg: 16px;
+      --spacing-xl: 24px;
+      --spacing-xxl: 32px;
+
+      /* Radius */
+      --radius-small: 4px;
+      --radius-medium: 8px;
+      --radius-large: 16px;
+      --radius-md: 40px;
+
+      /* Shadows */
+      --shadow-1: 0 2px 4px rgba(0, 0, 0, 0.05);
+      --shadow-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+    }
+
+    /* Global styles */
+    body {
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      background-color: var(--background-primary);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Title bubbles styles */
+    .title-bubbles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px !important;
+      margin-top: 10px !important;
+      justify-content: center;
+    }
+    
+    .title-bubble {
+      background-color: var(--accent) !important;
+      color: white !important;
+      padding: 4px 10px !important;
+      border-radius: 16px !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      display: inline-block !important;
+      margin: 1px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: var(--spacing-md);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: var(--spacing-md);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    button {
+      font-family: var(--font-sans);
+      cursor: pointer;
+    }
+
+    /* Card styles */
+    .card {
+      background-color: var(--background-primary);
+      border-radius: var(--radius-large);
+      padding: var(--spacing-xxl);
+      box-shadow: var(--shadow-1);
+      margin-bottom: var(--spacing-xl);
+      border: 1px solid var(--border-primary);
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-2);
+    }
+
+    .article-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: var(--spacing-lg);
+      color: var(--text-primary);
+    }
+
+    /* Timeline styles */
+    .timeline-list {
+      list-style: none;
+      padding-left: var(--spacing-xl);
+      margin-bottom: var(--spacing-xl);
+      position: relative;
+    }
+
+    .timeline-list:last-child {
+      margin-bottom: 0;
+    }
+    
+    .title-wrapper {
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .title-wrapper h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .timeline-item {
+      background-color: var(--background-secondary);
+      border-radius: var(--radius-medium);
+      padding: var(--spacing-xl);
+      margin-bottom: var(--spacing-lg);
+      border: 1px solid var(--border-primary);
+      transition: all var(--transition-fast);
+    }
+    
+    .timeline-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-2);
+      border-color: var(--accent);
+      background-color: var(--background-primary);
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: var(--spacing-xs);
+      color: var(--text-primary);
+    }
+
+    .timeline-item span {
+      display: block;
+      font-size: 14px;
+      color: var(--accent);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .timeline-text {
+      color: var(--text-secondary);
+      margin-bottom: 0;
+    }
+
+    /* Research Papers Styles */
+    .research-papers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      margin-bottom: 0;
+    }
+    
+    .research-paper-item {
+      background-color: var(--background-secondary);
+      border-radius: var(--radius-medium);
+      padding: var(--spacing-xl);
+      box-shadow: var(--shadow-1);
+      transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .research-paper-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-2);
+    }
+    
+    .paper-authors {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: var(--spacing-sm);
+      line-height: 1.4;
+    }
+    
+    .paper-title {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: var(--spacing-sm);
+      line-height: 1.4;
+    }
+    
+    .paper-publication {
+      color: var(--text-secondary);
+      font-style: italic;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+    
+    /* Timeline Styles for Resume */
+    .timeline-text ul {
+      margin-top: var(--spacing-sm);
+      padding-left: var(--spacing-lg);
+      margin-bottom: 0;
+    }
+    
+    .timeline-text li {
+      margin-bottom: var(--spacing-xs);
+      color: var(--text-secondary);
+    }
+    
+    .timeline-text li:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* Blog Posts Styles */
+    .blog-posts-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      margin-top: var(--spacing-xl);
+      margin-bottom: var(--spacing-xxl);
+    }
+    
+    @media (min-width: 768px) {
+      .blog-posts-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .blog-post-item {
+      background-color: var(--background-secondary);
+      border-radius: var(--radius-medium);
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+      transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .blog-post-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-2);
+    }
+    
+    .blog-post-item a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      color: inherit;
+    }
+    
+    .blog-post-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .blog-text-content {
+      padding: var(--spacing-xl);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .blog-category {
+      color: var(--accent);
+      font-weight: 500;
+      margin: 0;
+    }
+    
+    .dot {
+      background-color: var(--accent);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin: 0 var(--spacing-sm);
+      display: inline-block;
+      box-shadow: 0 0 0 2px var(--accent-light);
+    }
+    
+    time {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    
+    .blog-item-title {
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-sm);
+      font-size: 18px;
+      line-height: 1.3;
+      min-height: 2.6em; /* Примерно 2 строки текста */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .blog-text {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.5;
+    }
+    
+    /* Responsive Styles */
+    @media (min-width: 768px) {
+      .research-papers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Contact styles */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-sm) var(--spacing-md);
+      border-radius: var(--radius-md);
+      background: var(--background-primary);
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .contact-item:hover {
+      background: var(--accent);
+    }
+
+    .contact-item:hover * {
+      color: white !important;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-box ion-icon {
+      color: var(--text-secondary);
+      font-size: 20px;
+    }
+
+    /* Social icons */
+    .social-icons-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .social-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: var(--spacing-xl);
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background: var(--background-primary);
+      transition: all var(--transition-fast);
+    }
+
+    .social-link ion-icon {
+      color: var(--text-secondary);
+      font-size: 20px;
+    }
+
+    .social-link:hover {
+      background: var(--accent);
+    }
+
+    .social-link:hover ion-icon {
+      color: white;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      margin: var(--spacing-xl) 0 var(--spacing-xxl);
+      padding: var(--spacing-md) 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .navbar-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-md);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .navbar-link {
+      background: none;
+      border: none;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .navbar-link:hover,
+    .navbar-link.active {
+      color: var(--background-primary);
+      background-color: var(--accent);
+    }
+
+    @media (max-width: 767px) {
+      main {
+        padding: 10px;
+        gap: 12px;
+      }
+      
+      .navbar-link {
+        padding: 4px 8px;
+        font-size: 11px;
+        min-width: 0;
+        border-radius: 12px;
+      }
+      
+      .navbar-list {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 8px;
+        padding: 0 2px;
+      }
+      
+      .navbar {
+        margin: 10px 0;
+        padding: 5px 0;
+      }
+      
+      .navbar-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .info-content .name {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      
+      .title-bubble {
+        padding: 2px 6px !important;
+        font-size: 9px !important;
+        margin: 1px !important;
+      }
+      
+      .title-bubbles {
+        gap: 4px !important;
+        margin-top: 5px !important;
+      }
+      
+      .social-list {
+        gap: 8px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .social-link {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .contact-item {
+        padding: 5px 8px;
+        margin-bottom: 5px;
+      }
+      
+      .contact-info .contact-title {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+      
+      .contact-info .contact-link {
+        font-size: 12px;
+      }
+      
+      /* Улучшенные стили для языкового переключателя на мобильных */
+      .switchers {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .lang-switcher {
+        max-width: 150px;
+        margin: 0 auto;
+      }
+    }
+
+    /* Main layout with increased spacing */
+    main {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--spacing-xxl);
+      min-height: 100vh;
+      gap: var(--spacing-xxl);
+    }
+
+    .sidebar {
+      background-color: var(--background-primary);
+      border-radius: var(--radius-large);
+      padding: var(--spacing-xxl);
+      margin-bottom: var(--spacing-xl);
+      border: 1px solid var(--border-primary);
+      box-shadow: var(--shadow-1);
+    }
+
+    .sidebar-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .avatar-box {
+      margin: 0 0 20px;
+    }
+
+    .avatar-box img {
+      border-radius: 50%;
+      border: 2px solid var(--border-primary);
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    .social-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background-color: var(--background-primary);
+      color: var(--accent);
+      font-size: 20px;
+      transition: all var(--transition-fast);
+    }
+
+    .social-link:hover {
+      background-color: var(--accent);
+      color: var(--background-primary);
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding-top: var(--spacing-xl);
+    }
+
+    /* Active page */
+    [data-page] {
+      display: none;
+    }
+
+    [data-page].active {
+      display: block;
+    }
+
+    /* Responsive layout */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .blog-posts-list {
+        grid-template-columns: 1fr;
+      }
+      
+      .research-papers {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      main {
+        flex-direction: row;
+        gap: var(--spacing-xxl);
+      }
+
+      .sidebar {
+        flex-basis: 350px;
+        flex-shrink: 0;
+        position: sticky;
+        top: var(--spacing-xl);
+        margin-bottom: 0;
+        height: fit-content;
+      }
+      
+      .blog-posts-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .research-papers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Navigation Styles */
+    nav {
+      padding: var(--spacing-md) 0;
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: var(--spacing-md);
+    }
+    
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      padding: var(--spacing-sm) var(--spacing-md);
+      border-radius: var(--radius-small);
+      transition: all var(--transition-fast);
+    }
+    
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--accent);
+      background-color: var(--accent-light);
+    }
+    
+    /* Button Styles */
+    .button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      font-weight: 500;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--radius-medium);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-align: center;
+    }
+    
+    .button:hover {
+      background-color: var(--accent-hover);
+    }
+    
+    .button-secondary {
+      background-color: var(--background-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    
+    .button-secondary:hover {
+      background-color: var(--background-tertiary);
+    }
+
+    /* Container and Section Styles */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+    
+    section {
+      margin-bottom: var(--spacing-xxl);
+      padding: var(--spacing-lg) 0;
+    }
+    
+    .section-title {
+      font-size: 28px;
+      margin-bottom: var(--spacing-lg);
+      color: var(--text-primary);
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--accent);
+      border-radius: var(--radius-small);
+    }
+    
+    .section-description {
+      color: var(--text-secondary);
+      margin-bottom: var(--spacing-lg);
+      max-width: 700px;
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: var(--spacing-xxl) 0;
+      text-align: center;
+      margin-bottom: var(--spacing-xxl);
+    }
+    
+    .hero-title {
+      font-size: 42px;
+      margin-bottom: var(--spacing-md);
+      color: var(--text-primary);
+    }
+    
+    .hero-subtitle {
+      font-size: 20px;
+      color: var(--text-secondary);
+      margin-bottom: var(--spacing-lg);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: var(--spacing-md);
+      justify-content: center;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: var(--background-secondary);
+      padding: var(--spacing-xl) 0;
+      margin-top: var(--spacing-xxl);
+      border-top: 1px solid var(--border-color);
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+    
+    @media (min-width: 768px) {
+      .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    
+    .footer-section {
+      flex: 1;
+    }
+    
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: var(--spacing-md);
+      color: var(--text-primary);
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: var(--spacing-sm);
+    }
+    
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-md);
+    }
+    
+    .social-links a {
+      color: var(--text-secondary);
+      font-size: 20px;
+      transition: color var(--transition-fast);
+    }
+    
+    .social-links a:hover {
+      color: var(--accent);
+    }
+    
+    .copyright {
+      text-align: center;
+      margin-top: var(--spacing-xl);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 32px;
+      }
+      
+      .hero-subtitle {
+        font-size: 18px;
+      }
+      
+      .section-title {
+        font-size: 24px;
+      }
+      
+      .research-papers-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .nav-container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+      }
+      
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+      .hero {
+        padding: var(--spacing-xl) 0;
+      }
+      
+      .hero-title {
+        font-size: 28px;
+      }
+      
+      .blog-posts-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Conferences icons - fix dots */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: var(--spacing-xl);
+      left: -24px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-light);
+    }
+
+    /* Fix remaining purple colors */
+    .timeline-item span {
+      color: var(--accent);
+    }
+    
+    .social-link {
+      color: var(--accent);
+    }
+    
+    .blog-category {
+      color: var(--accent);
+    }
+    
+    .icon-box ion-icon {
+      color: var(--accent);
+    }
+    
+    .navbar-link.active {
+      background-color: var(--background-secondary);
+      color: var(--accent);
+    }
+    
+    .switcher-btn.active {
+      color: var(--accent);
+    }
+
+    /* Language switcher styles */
+    .switchers {
+      margin-top: var(--spacing-xl);
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .switcher {
+      background-color: var(--background-secondary);
+      border-radius: 50px;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-1);
+      border: 1px solid var(--border-primary);
+      width: 100%;
+      max-width: 180px;
+      margin: 0 auto;
+    }
+    
+    .separator {
+      width: 100%;
+      height: 1px;
+      background-color: var(--border-primary);
+      margin: 15px 0;
+    }
+    
+    .switcher-btn {
+      border: none;
+      background: none;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: 50px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+      flex: 1;
+      text-align: center;
+    }
+    
+    .switcher-btn:hover {
+      color: var(--accent);
+    }
+    
+    .switcher-btn.active {
+      color: var(--background-primary);
+      background-color: var(--accent);
+      box-shadow: var(--shadow-1);
+    }
+
+    /* Override ion-icons styles with high specificity */
+    .sidebar-info_more .contacts-list .contact-item .icon-box ion-icon,
+    .sidebar-info_more .contacts-list .contact-item .icon-box ion-icon[name="logo-github"],
+    .sidebar-info_more .contacts-list .contact-item .icon-box ion-icon[name="mail-outline"],
+    .sidebar-info_more .contacts-list .contact-item .icon-box ion-icon[name="location-outline"] {
+      color: var(--text-secondary) !important;
+      fill: var(--text-secondary) !important;
+      stroke: var(--text-secondary) !important;
+      background: none !important;
+      --ionicon-stroke-width: 32px !important;
+    }
+
+    .sidebar-info_more .contacts-list .contact-item:hover .icon-box ion-icon,
+    .sidebar-info_more .contacts-list .contact-item:hover .icon-box ion-icon[name="logo-github"],
+    .sidebar-info_more .contacts-list .contact-item:hover .icon-box ion-icon[name="mail-outline"],
+    .sidebar-info_more .contacts-list .contact-item:hover .icon-box ion-icon[name="location-outline"] {
+      color: white !important;
+      fill: white !important;
+      stroke: white !important;
+      background: none !important;
+      --ionicon-stroke-width: 32px !important;
+    }
+
+    /* Override any default ionicon colors with maximum specificity */
+    body ion-icon,
+    body ion-icon[name],
+    body ion-icon[name][role="img"],
+    body ion-icon[name][aria-label] {
+      color: inherit !important;
+      fill: currentColor !important;
+      stroke: currentColor !important;
+      --ionicon-stroke-width: 32px !important;
+    }
+
+    /* Fix GitHub icon */
+    .contact-item ion-icon[name="logo-github"] {
+      color: var(--text-secondary) !important;
+      fill: var(--text-secondary) !important;
+    }
+
+    .contact-item:hover ion-icon[name="logo-github"] {
+      color: white !important;
+      fill: white !important;
+    }
+
+    .contact-item:hover a {
+      color: white !important;
+    }
+
+    @media (max-width: 767px) {
+      /* Улучшенные стили для социальных иконок и переключателя */
+      .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      
+      .social-icons-container {
+        margin: 10px 0;
+      }
+      
+      .switchers {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .switcher {
+        max-width: 150px;
+      }
+      
+      .switcher-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+      }
+      
+      .separator {
+        margin: 10px auto;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" role="complementary" aria-label="Personal information">
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" 
+               srcset="./assets/images/avatar.png 1x, ./assets/images/avatar.png 2x" 
+               alt="Your Name Here" 
+               width="150" 
+               height="150"
+               fetchpriority="high">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Your Name Here">Your Name Here</h1>
+          <div class="title-bubbles en-content" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; justify-content: center;">
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Kinda Scientist</span>
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Kinda Entrepreneur</span>
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Some Guy</span>
+          </div>
+          <div class="title-bubbles ru-content" style="display: none; flex-wrap: wrap; gap: 10px; margin-top: 10px; justify-content: center;">
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Типа Учёный</span>
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Типа Предприниматель</span>
+            <span class="title-bubble" style="background-color: #007bff; color: white; padding: 4px 10px; border-radius: 16px; font-size: 13px; font-weight: 500; display: inline-block; margin: 1px;">Просто парень</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="contacts-list" id="contacts-list">
+          <a href="https://example.com" class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title en-content">Organization</p>
+              <p class="contact-title ru-content" style="display: none;">Организация</p>
+              <span class="contact-link en-content">Your organization</span>
+              <span class="contact-link ru-content" style="display: none;">Ваша организация</span>
+            </div>
+          </a>
+
+          <a href="https://t.me/yourusername" class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Telegram</p>
+              <span class="contact-link">@yourusername</span>
+            </div>
+          </a>
+
+          <a href="mailto:your.email@example.com" class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <span class="contact-link">your.email@example.com</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="social-icons-container">
+          <ul class="social-list" id="social-list">
+            <li class="social-item">
+              <a href="https://www.linkedin.com" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Moved switchers here -->
+        <div class="switchers">
+          <div class="switcher lang-switcher">
+            <button class="switcher-btn active" data-lang="en">EN</button>
+            <button class="switcher-btn" data-lang="ru">RU</button>
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+          <ul class="navbar-list" id="navbar-list">
+            <li>
+              <button class="navbar-link active" data-nav-link data-section="about">
+                <span class="en-content">About</span>
+                <span class="ru-content" style="display: none;">Обо мне</span>
+              </button>
+          </li>
+            <li>
+              <button class="navbar-link" data-nav-link data-section="resume">
+                <span class="en-content">Resume</span>
+                <span class="ru-content" style="display: none;">Резюме</span>
+              </button>
+          </li>
+            <li>
+              <button class="navbar-link" data-nav-link data-section="teaching">
+                <span class="en-content">Teaching</span>
+                <span class="ru-content" style="display: none;">Преподавание</span>
+              </button>
+          </li>
+            <li>
+              <button class="navbar-link" data-nav-link data-section="activities">
+                <span class="en-content">Activities</span>
+                <span class="ru-content" style="display: none;">Деятельность</span>
+              </button>
+          </li>
+            <li>
+              <button class="navbar-link" data-nav-link data-section="publications">
+                <span class="en-content">Publications</span>
+                <span class="ru-content" style="display: none;">Публикации</span>
+              </button>
+          </li>
+        </ul>
+        </div>
+      </nav>
+
+      <!-- Content will be generated by JavaScript -->
+      <div id="content-container"></div>
+
+    </div>
+
+  </main>
+
+  <script>
+    // Initialize navigation
+    function initializeNavigation() {
+      const navigationLinks = document.querySelectorAll('.navbar-link');
+      const pages = document.querySelectorAll('[data-page]');
+
+      // Add click event to each navigation link
+      navigationLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          // Remove active class from all links
+          navigationLinks.forEach(link => link.classList.remove('active'));
+          
+          // Add active class to clicked link
+          this.classList.add('active');
+          
+          // Get the page to show
+          const targetPage = this.getAttribute('data-section');
+          
+          // Hide all pages
+          pages.forEach(page => page.classList.remove('active'));
+          
+          // Show the target page
+          const pageToShow = document.querySelector(`[data-page="${targetPage}"]`);
+          if (pageToShow) {
+            pageToShow.classList.add('active');
+          }
+        });
+      });
+
+      // Apply title bubbles from config to the DOM
+      const storedLang = localStorage.getItem('preferredLanguage') || 'en';
+      const langBtn = document.querySelector(`.lang-switcher .switcher-btn[data-lang="${storedLang}"]`);
+      if (langBtn) {
+        langBtn.click();
+      }
+    }
+
+    // Theme and Language Switchers
+    function initializeSwitchers() {
+      console.log('Initializing language switcher');
+      
+      // Language switcher
+      const langBtns = document.querySelectorAll('.lang-switcher .switcher-btn');
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          
+          // Update active button
+          langBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Store language preference in localStorage
+          localStorage.setItem('preferredLanguage', lang);
+          
+          // Toggle visibility of content based on language
+          toggleLanguageContent(lang);
+          
+          // Update language in document
+          document.documentElement.lang = lang;
+          console.log(`Language switched to: ${lang}`);
+        });
+      });
+      
+      // Check if there's a stored language preference
+      const storedLang = localStorage.getItem('preferredLanguage');
+      if (storedLang) {
+        // Find and click the corresponding language button
+        const langBtn = document.querySelector(`.lang-switcher .switcher-btn[data-lang="${storedLang}"]`);
+        if (langBtn) {
+          langBtn.click();
+        }
+      }
+    }
+    
+    // Function to toggle content based on language
+    function toggleLanguageContent(lang) {
+      const ruElements = document.querySelectorAll('.ru-content');
+      const enElements = document.querySelectorAll('.en-content');
+      const ruTitleBubbles = document.querySelector('.title-bubbles.ru-content');
+      const enTitleBubbles = document.querySelector('.title-bubbles.en-content');
+      
+      if (lang === 'ru') {
+        ruElements.forEach(el => {
+          // Для title-bubbles используем flex, для остальных - block
+          if (el === ruTitleBubbles) {
+            el.style.display = 'flex';
+          } else {
+            el.style.display = 'block';
+          }
+        });
+        enElements.forEach(el => el.style.display = 'none');
+        document.documentElement.lang = 'ru';
+        
+        // Update document title and meta tags
+        document.title = 'Ваше Имя';
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.content = 'Ваше Имя - Научный сотрудник, специализирующийся на обработке естественного языка, тематическом моделировании и машинном обучении';
+        }
+      } else {
+        ruElements.forEach(el => el.style.display = 'none');
+        enElements.forEach(el => {
+          // Для title-bubbles используем flex, для остальных - block
+          if (el === enTitleBubbles) {
+            el.style.display = 'flex';
+          } else {
+            el.style.display = 'block';
+          }
+        });
+        document.documentElement.lang = 'en';
+        
+        // Reset document title and meta tags to English
+        document.title = 'Your Name Here';
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.content = 'Your Name Here - Research Scientist specializing in Natural Language Processing, Topic Modeling, Recommender Systems, and Reinforcement Learning';
+        }
+      }
+      
+      console.log(`Language switched to: ${lang}`);
+    }
+
+    // Embedded configuration (instead of loading from config.json)
+    const config = {
+      site: {
+        title: "Your Name - CV Page",
+        description: "Your Name - Researcher, Scientist, Teacher specializing in Natural Language Processing, Topic Modeling, and Machine Learning",
+        theme: "light"
+      },
+      personal: {
+        name: "Your Name Here",
+        titles: {
+          en: ["Kinda Scientist", "Kinda Entrepreneur", "Some Guy"],
+          ru: ["Типа Учёный", "Типа Предприниматель", "Просто парень"]
+        },
+        contacts: [
+          {
+            title: "Organization",
+            value: "Your organization",
+            link: "https://example.com",
+            icon: "business-outline"
+          },
+          {
+            title: "Telegram",
+            value: "@yourusername",
+            link: "https://t.me/yourusername",
+            icon: "paper-plane-outline"
+          },
+          {
+            title: "Email",
+            value: "your.email@example.com",
+            link: "mailto:your.email@example.com",
+            icon: "mail-outline"
+          }
+        ],
+        social: [
+          {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com",
+            icon: "logo-linkedin"
+          },
+          {
+            name: "GitHub",
+            link: "https://github.com",
+            icon: "logo-github"
+          }
+        ]
+      },
+      sections: {
+        "about": {
+          "enabled": true,
+          "title": "About",
+          "content": []
+        },
+        "resume": {
+          "enabled": true,
+          "title": "Resume",
+          "education": [
+            {
+              "title": "University",
+              "period": "City, 20XX — 20XX",
+              "description": "Ph.D. in ..., Dissertation on ..."
+            },
+            {
+              "title": "University",
+              "period": "City, 20XX — 20XX",
+              "description": "MS in ..., graduated with honors"
+            },
+            {
+              "title": "School",
+              "period": "City, 20XX — 20XX",
+              "description": "Graduated with honors"
+            }
+          ],
+          "experience": [
+            {
+              "title": "Another company",
+              "period": "20XX — Present",
+              "description": "CTO or sum"
+            },
+            {
+              "title": "Company",
+              "period": "20XX — 20XX",
+              "description": "Senior ..."
+            }
+          ]
+        },
+        "teaching": {
+          "enabled": true,
+          "title": "Teaching",
+          "lectures": [
+            {
+              "title": "Advanced Machine Learning",
+              "period": "2022 — 2023",
+              "description": "Course covering machine learning algorithms, neural networks, and deep learning techniques with practical applications."
+            },
+            {
+              "title": "Computer Vision Fundamentals",
+              "period": "2020 — 2022",
+              "description": "Course covering image processing, feature extraction, object detection and recognition systems."
+            },
+            {
+              "title": "Natural Language Processing",
+              "period": "2019 — 2021",
+              "description": "Course covering text analysis, language models, sentiment analysis and modern transformer architectures."
+            }
+          ]
+        },
+        "activities": {
+          "enabled": true,
+          "title": "Activities",
+          "conferences": [
+            {
+              "title": "International Conference on Machine Learning",
+              "period": "2023",
+              "description": "Presented paper on novel reinforcement learning techniques for autonomous systems."
+            },
+            {
+              "title": "Computer Vision and Pattern Recognition",
+              "period": "2022",
+              "description": "Presented paper on efficient object detection in resource-constrained environments."
+            },
+            {
+              "title": "Natural Language Processing Summit",
+              "period": "2021",
+              "description": "Presented paper on cross-lingual transfer learning for low-resource languages."
+            }
+          ],
+          "workshops": [
+            {
+              "title": "Deep Learning Workshop",
+              "period": "2023",
+              "description": "Organized workshop on recent advances in transformer architectures for vision and language tasks."
+            },
+            {
+              "title": "AI Ethics Symposium",
+              "period": "2022",
+              "description": "Co-organized workshop on ethical considerations in developing AI systems and their societal impacts."
+            }
+          ]
+        },
+        "publications": {
+          "enabled": true,
+          "title": "Publications",
+          "items": [
+            {
+              "title": "Efficient Transformer Architectures for Edge Devices",
+              "authors": "Your Name, Co-author 1, Co-author 2",
+              "venue": "ACM Conference on Embedded Systems, 2023",
+              "link": "your-publication-link1.com"
+            },
+            {
+              "title": "Cross-Modal Learning in Resource-Constrained Environments",
+              "authors": "Your Name, Co-author 1, Co-author 2",
+              "venue": "IEEE International Conference on Computer Vision, 2022",
+              "link": "your-publication-link2.com"
+            },
+            {
+              "title": "Adaptive Neural Networks for Time-Series Prediction",
+              "authors": "Your Name, Co-author 1, Co-author 2",
+              "venue": "International Conference on Machine Learning, 2021",
+              "link": "your-publication-link3.com"
+            },
+            {
+              "title": "Adaptive Neural Networks for Time-Series Prediction",
+              "authors": "Co-author 1, Your Name, Co-author 2",
+              "venue": "International Conference on Machine Learning, 2022",
+              "link": "your-publication-link4.com"
+            }
+          ]
+        }
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM loaded');
+      
+      try {
+        console.log('Using embedded configuration');
+        
+        // Apply site configuration
+        document.title = config.site.title;
+        console.log('Applied site title:', config.site.title);
+        document.documentElement.style.setProperty('--theme-mode', `'${config.site.theme}'`);
+        console.log('Applied theme mode:', config.site.theme);
+        
+        // Generate sections
+        const contentContainer = document.getElementById('content-container');
+        if (contentContainer) {
+          let isFirstSection = true;
+          Object.entries(config.sections).forEach(([sectionId, sectionData]) => {
+            // Skip 'conferences' section in content generation
+            if (sectionData.enabled && sectionId !== 'conferences') {
+              console.log(`Generating section: ${sectionId}`);
+              
+              const article = document.createElement('article');
+              article.className = `${sectionId} card`;
+              article.dataset.page = sectionId;
+              
+              if (isFirstSection) {
+                article.classList.add('active');
+                isFirstSection = false;
+              }
+              
+              // Translate section titles
+              let ruTitle = '';
+              switch(sectionData.title) {
+                case 'About': ruTitle = 'Обо мне'; break;
+                case 'Resume': ruTitle = 'Резюме'; break;
+                case 'Teaching': ruTitle = 'Преподавание'; break;
+                case 'Activities': ruTitle = 'Деятельность'; break;
+                case 'Publications': ruTitle = 'Публикации'; break;
+                default: ruTitle = sectionData.title;
+              }
+              
+              let sectionContent = `
+                <header>
+                  <h2 class="article-title en-content">${sectionData.title}</h2>
+                  <h2 class="article-title ru-content" style="display: none;">${ruTitle}</h2>
+                </header>
+              `;
+              
+              // Generate content based on section type
+              if (sectionId === 'about') {
+                sectionContent += `<section class="about-text">`;
+                
+                if (sectionData.content) {
+                  // English content
+                  sectionContent += `<div class="en-content">
+                    <p>I am engaged in science, teach, learn, work, research, and engage in entrepreneurship in the field of...</p>
+                  </div>`;
+                  
+                  // Russian content
+                  sectionContent += `<div class="ru-content" style="display: none;">
+                    <p>Я занимаюсь наукой, обучаю, учусь, работаю, исследую и занимаюсь предпринимательством в области...</p>
+                  </div>`;
+                }
+                
+                sectionContent += `</section>`;
+              } 
+              else if (sectionId === 'resume') {
+                // Add education section
+                if (sectionData.education && sectionData.education.length > 0) {
+                  sectionContent += `
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Education</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Образование</h3>
+                      </div>
+                      <ol class="timeline-list">
+                  `;
+                  
+                  sectionData.education.forEach(item => {
+                    let educationTitle = item.title;
+                    let educationPeriod = item.period;
+                    
+                    // Translate education titles and periods
+                    let educationTitleRu = "";
+                    let educationPeriodRu = "";
+                    
+                    if (item.title.includes("University")) {
+                      educationTitleRu = "Университет";
+                      educationPeriodRu = item.period.replace("City", "Город").replace(/\d{4}/g, function(year) {
+                        return year;
+                      });
+                    } else if (item.title === "School") {
+                      educationTitleRu = "Школа";
+                      educationPeriodRu = item.period.replace("City", "Город").replace(/\d{4}/g, function(year) {
+                        return year;
+                      });
+                    }
+                    
+                    sectionContent += `
+                      <li class="timeline-item">
+                        <h4 class="timeline-item-title en-content">${educationTitle}</h4>
+                        <h4 class="timeline-item-title ru-content" style="display: none;">${educationTitleRu}</h4>
+                        <span class="en-content">${educationPeriod}</span>
+                        <span class="ru-content" style="display: none;">${educationPeriodRu}</span>
+                        <p class="timeline-text en-content">${item.description}</p>
+                        <p class="timeline-text ru-content" style="display: none;">
+                          ${item.title.includes("University / Research") ? 
+                            "Факультет, окончил аспирантуру. Научно-исследовательский институт, защитил диссертацию по информатике на тему «Тематическое моделирование»" : 
+                            item.title.includes("University") && item.period.includes("20XX — 20XX") ? 
+                            "Факультет, окончил с отличием, степень ..." : 
+                            "Факультет, окончил с отличием, степень бакалавра ..."}
+                        </p>
+                      </li>
+                    `;
+                  });
+                  
+                  sectionContent += '</ol></section>';
+                }
+                
+                // Add experience section
+                if (sectionData.experience && sectionData.experience.length > 0) {
+                  sectionContent += `
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Experience</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Опыт работы</h3>
+                      </div>
+                      <ol class="timeline-list">
+                  `;
+                  
+                  sectionData.experience.forEach(item => {
+                    let experienceTitle = item.title;
+                    let experiencePeriod = item.period;
+                    
+                    // Translate job titles and periods
+                    let experienceTitleRu = "";
+                    let experiencePeriodRu = "";
+                    
+                    if (item.title.includes("Another company")) {
+                      experienceTitleRu = "Другая компания, Технический директор";
+                      experiencePeriodRu = item.period.replace("Present", "настоящее время");
+                    } else if (item.title.includes("Company")) {
+                      experienceTitleRu = "Компания, Старший специалист";
+                      experiencePeriodRu = item.period;
+                    } else if (item.title.includes("Company Name, Data Scientist / Co-founder")) {
+                      experienceTitleRu = "Название компании, Специалист по данным / Сооснователь";
+                      experiencePeriodRu = item.period;
+                    } else if (item.title.includes("Your organization")) {
+                      experienceTitleRu = "Научно-исследовательский институт, Научный сотрудник";
+                      experiencePeriodRu = item.period;
+                    } else if (item.title.includes("University")) {
+                      experienceTitleRu = "Университет, Старший преподаватель / Исследователь";
+                      experiencePeriodRu = item.period;
+                    } else {
+                      experienceTitleRu = "Компания, Специалист";
+                      experiencePeriodRu = item.period.replace("Present", "настоящее время");
+                    }
+                    
+                    let itemContent = `
+                      <li class="timeline-item">
+                        <h4 class="timeline-item-title en-content">${experienceTitle}</h4>
+                        <h4 class="timeline-item-title ru-content" style="display: none;">${experienceTitleRu}</h4>
+                        <span class="en-content">${experiencePeriod}</span>
+                        <span class="ru-content" style="display: none;">${experiencePeriodRu}</span>
+                    `;
+                    
+                    if (item.description) {
+                      // Создаем русский перевод в зависимости от опыта работы
+                      let ruDescription = "";
+                      
+                      if (item.title.includes("Company Name, Data Scientist / Co-founder")) {
+                        ruDescription = "Разработка и внедрение алгоритмов машинного обучения для анализа пользовательских данных. Создание рекомендательных систем на основе глубокого обучения. Управление командой из 5 разработчиков и ведение проектов полного цикла.";
+                      } else if (item.title.includes("Your organization")) {
+                        ruDescription = "Проведение научных исследований в области обработки естественного языка. Создание и публикация статей в международных журналах. Участие в исследовательских проектах совместно с ведущими университетами.";
+                      } else if (item.title.includes("University")) {
+                        ruDescription = "Преподавание курсов по машинному обучению, компьютерному зрению и обработке естественного языка. Научное руководство дипломными работами студентов. Участие в академических конференциях и семинарах.";
+                      } else {
+                        ruDescription = "Разработка и оптимизация ...";
+                      }
+                      
+                      itemContent += `
+                        <p class="timeline-text en-content">${item.description}</p>
+                        <p class="timeline-text ru-content" style="display: none;">${ruDescription}</p>
+                      `;
+                    }
+                    
+                    itemContent += '</li>';
+                    sectionContent += itemContent;
+                  });
+                  
+                  sectionContent += '</ol></section>';
+                }
+              }
+              else if (sectionId === 'teaching') {
+                // Add courses section
+                if (sectionData.lectures && sectionData.lectures.length > 0) {
+                  sectionContent += `
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Courses</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Курсы</h3>
+                      </div>
+                      <ol class="timeline-list">
+                  `;
+                  
+                  sectionData.lectures.forEach(course => {
+                    let courseTitle = course.title;
+                    let courseDescription = course.description;
+                    let coursePeriod = course.period;
+                    
+                    let courseTitleRu = "";
+                    let courseDescriptionRu = "";
+                    let coursePeriodRu = "";
+                    
+                    if (course.title === "Advanced Machine Learning") {
+                      courseTitleRu = "Курс \"Продвинутое машинное обучение\"";
+                      courseDescriptionRu = "Курс, охватывающий алгоритмы машинного обучения, нейронные сети и техники глубокого обучения с практическими применениями.";
+                      coursePeriodRu = coursePeriod.replace("2022", "2022 г.").replace("2023", "2023 г.");
+                    } else if (course.title === "Computer Vision Fundamentals") {
+                      courseTitleRu = "Курс \"Основы компьютерного зрения\"";
+                      courseDescriptionRu = "Курс, охватывающий обработку изображений, извлечение признаков, системы обнаружения и распознавания объектов.";
+                      coursePeriodRu = coursePeriod.replace("2020", "2020 г.").replace("2022", "2022 г.");
+                    } else if (course.title === "Natural Language Processing") {
+                      courseTitleRu = "Курс \"Обработка естественного языка\"";
+                      courseDescriptionRu = "Курс, охватывающий анализ текста, языковые модели, анализ тональности и современные архитектуры трансформеров.";
+                      coursePeriodRu = coursePeriod.replace("2019", "2019 г.").replace("2021", "2021 г.");
+                    }
+                    
+                    sectionContent += `
+                      <li class="timeline-item">
+                        <h4 class="timeline-item-title en-content">${courseTitle}</h4>
+                        <h4 class="timeline-item-title ru-content" style="display: none;">${courseTitleRu}</h4>
+                        <span class="en-content">${coursePeriod}</span>
+                        <span class="ru-content" style="display: none;">${coursePeriodRu}</span>
+                        <p class="timeline-text en-content">${courseDescription}</p>
+                        <p class="timeline-text ru-content" style="display: none;">${courseDescriptionRu}</p>
+                      </li>
+                    `;
+                  });
+                  
+                  sectionContent += '</ol></section>';
+                }
+              }
+              else if (sectionId === 'activities') {
+                // Add conferences section
+                if (sectionData.conferences && sectionData.conferences.length > 0) {
+                  sectionContent += `
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Conferences</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Конференции</h3>
+                      </div>
+                      <ol class="timeline-list">
+                  `;
+                  
+                  sectionData.conferences.forEach(conference => {
+                    let confTitle = conference.title;
+                    let confPeriod = conference.period;
+                    let confDescription = conference.description;
+                    
+                    // Добавляем различные русские названия для конференций
+                    let confTitleRu = "";
+                    // Добавляем русский перевод для периода
+                    let confPeriodRu = confPeriod;
+                    let confDescriptionRu = "";
+                    
+                    if (conference.title.includes("International Conference on Machine Learning")) {
+                      confTitleRu = "Международная конференция по машинному обучению";
+                      confPeriodRu = confPeriod.replace("2023", "2023 г.");
+                      confDescriptionRu = "Представлен доклад о новых методах обучения с подкреплением для автономных систем.";
+                    } else if (conference.title.includes("Computer Vision and Pattern Recognition")) {
+                      confTitleRu = "Конференция по компьютерному зрению и распознаванию образов";
+                      confPeriodRu = confPeriod.replace("2022", "2022 г.");
+                      confDescriptionRu = "Представлен доклад об эффективном обнаружении объектов в среде с ограниченными ресурсами.";
+                    } else if (conference.title.includes("Natural Language Processing Summit")) {
+                      confTitleRu = "Конференция по обработке естественного языка";
+                      confPeriodRu = confPeriod.replace("2021", "2021 г.");
+                      confDescriptionRu = "Представлен доклад о кросс-языковом трансферном обучении для языков с малыми ресурсами.";
+                    }
+                    
+                    sectionContent += `
+                      <li class="timeline-item">
+                        <h4 class="timeline-item-title en-content">${confTitle}</h4>
+                        <h4 class="timeline-item-title ru-content" style="display: none;">${confTitleRu}</h4>
+                        <span class="en-content">${confPeriod}</span>
+                        <span class="ru-content" style="display: none;">${confPeriodRu}</span>
+                        <p class="timeline-text en-content">${confDescription}</p>
+                        <p class="timeline-text ru-content" style="display: none;">${confDescriptionRu}</p>
+                      </li>
+                    `;
+                  });
+                  
+                  sectionContent += '</ol></section>';
+                }
+                
+                // Add workshops section
+                if (sectionData.workshops && sectionData.workshops.length > 0) {
+                  sectionContent += `
+                    <section class="timeline">
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Workshops</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Семинары</h3>
+                      </div>
+                      <ol class="timeline-list">
+                  `;
+                  
+                  sectionData.workshops.forEach(workshop => {
+                    let workshopTitle = workshop.title;
+                    let workshopPeriod = workshop.period;
+                    let workshopDescription = workshop.description;
+                    
+                    let workshopTitleRu = "";
+                    let workshopPeriodRu = "";
+                    let workshopDescriptionRu = "";
+                    
+                    if (workshop.title.includes("Deep Learning Workshop")) {
+                      workshopTitleRu = "Семинар по глубокому обучению";
+                      workshopPeriodRu = workshopPeriod.replace("2023", "2023 г.");
+                      workshopDescriptionRu = "Организовал семинар по последним достижениям в архитектурах трансформеров для задач зрения и языка.";
+                    } else if (workshop.title.includes("AI Ethics Symposium")) {
+                      workshopTitleRu = "Симпозиум по этике ИИ";
+                      workshopPeriodRu = workshopPeriod.replace("2022", "2022 г.");
+                      workshopDescriptionRu = "Соорганизовал симпозиум по этическим аспектам разработки систем ИИ и их социальным воздействиям.";
+                    }
+                    
+                    sectionContent += `
+                      <li class="timeline-item">
+                        <h4 class="timeline-item-title en-content">${workshopTitle}</h4>
+                        <h4 class="timeline-item-title ru-content" style="display: none;">${workshopTitleRu}</h4>
+                        <span class="en-content">${workshopPeriod}</span>
+                        <span class="ru-content" style="display: none;">${workshopPeriodRu}</span>
+                        <p class="timeline-text en-content">${workshopDescription}</p>
+                        <p class="timeline-text ru-content" style="display: none;">${workshopDescriptionRu}</p>
+                      </li>
+                    `;
+                  });
+                  
+                  sectionContent += '</ol></section>';
+                }
+              }
+              else if (sectionId === 'publications') {
+                // Add web articles section
+                if (sectionData.items && sectionData.items.length > 0) {
+                  sectionContent += `
+                    <section>
+                      <div class="title-wrapper">
+                        <h3 class="h3 en-content">Web Articles</h3>
+                        <h3 class="h3 ru-content" style="display: none;">Веб-статьи</h3>
+                      </div>
+                      <ul class="blog-posts-list">
+                  `;
+                  
+                  sectionData.items.forEach(article => {
+                    let articleTitleRu = "";
+                    let venueRu = "";
+                    let articleDescriptionRu = "Подробности публикации...";
+                    let enDescription = "Details about publication...";
+                    
+                    if (article.title.includes("Efficient Transformer Architectures")) {
+                      articleTitleRu = "Эффективные архитектуры трансформеров для граничных устройств";
+                      venueRu = "Конференция ACM по встраиваемым системам, 2023 г.";
+                      articleDescriptionRu = "Исследование оптимизированных архитектур трансформеров для устройств с ограниченными ресурсами.";
+                      enDescription = "Research on optimized transformer architectures for resource-constrained devices.";
+                    } else if (article.title.includes("Cross-Modal Learning")) {
+                      articleTitleRu = "Кросс-модальное обучение в среде с ограниченными ресурсами";
+                      venueRu = "Международная конференция IEEE по компьютерному зрению, 2022 г.";
+                      articleDescriptionRu = "Исследование методов интеграции информации из различных модальностей для эффективного обучения.";
+                      enDescription = "Research on methods for integrating information from different modalities for efficient learning.";
+                    } else if (article.title.includes("Adaptive Neural Networks")) {
+                      articleTitleRu = "Адаптивные нейронные сети для прогнозирования временных рядов";
+                      venueRu = "Международная конференция по машинному обучению, 2021 г.";
+                      articleDescriptionRu = "Разработка нейронных сетей, способных адаптироваться к изменениям в данных временных рядов.";
+                      enDescription = "Development of neural networks capable of adapting to changes in time-series data.";
+                    } else if (article.title.includes("Privacy-Preserving Techniques")) {
+                      articleTitleRu = "Методы сохранения конфиденциальности для федеративного обучения";
+                      venueRu = "Конференция по нейронным системам обработки информации, 2020 г.";
+                      articleDescriptionRu = "Исследование методов обеспечения конфиденциальности в системах федеративного обучения.";
+                      enDescription = "Development of neural networks capable of adapting to changes in time-series data.";
+                    } else {
+                      articleTitleRu = article.title;
+                      venueRu = article.venue;
+                    }
+                    
+                    sectionContent += `
+                      <li class="blog-post-item">
+                        <a href="${article.link}" target="_blank">
+                          ${article.image ? `<img src="${article.image}" alt="${article.title}" width="300" height="169" loading="lazy">` : ''}
+                            <div class="blog-text-content">
+                              <div class="blog-meta">
+                                <p class="blog-category en-content">${article.venue}</p>
+                                <p class="blog-category ru-content" style="display: none;">${venueRu}</p>
+                              </div>
+                              <h3 class="h3 blog-item-title en-content">${article.title}</h3>
+                              <h3 class="h3 blog-item-title ru-content" style="display: none;">${articleTitleRu}</h3>
+                              <p class="blog-text en-content">${enDescription}</p>
+                              <p class="blog-text ru-content" style="display: none;">${articleDescriptionRu}</p>
+                          </div>
+                        </a>
+                      </li>
+                    `;
+                  });
+                  
+                  sectionContent += '</ul></section>';
+                }
+              }
+              
+              article.innerHTML = sectionContent;
+              contentContainer.appendChild(article);
+            }
+          });
+        }
+        
+        // Initialize navigation
+        initializeNavigation();
+        
+        // Initialize switchers
+        initializeSwitchers();
+        
+        console.log('Site loaded successfully');
+      } catch (error) {
+        console.error(`Error: ${error.message}`);
+      }
+    });
+  </script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+</body>
+
+</html> 
