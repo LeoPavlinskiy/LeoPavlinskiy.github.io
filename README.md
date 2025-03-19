@@ -1,4 +1,4 @@
-# Personal Website Template
+# Personal Website Template.
 
 This repository contains a personal website template with a clean, modern design inspired by Apple UI Guidelines. The website is fully configurable through embedded JavaScript configuration.
 
